@@ -1,0 +1,6 @@
+# Fake Enforcing
+on property:sys.boot_completed=1
+    chown system system /sys/fs/selinux/enforce
+    chmod /sys/fs/selinux/enforce
+    write /sys/fs/selinux/enforce 2
+    
